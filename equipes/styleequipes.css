@@ -98,3 +98,165 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+
+.relacionados {
+  padding: 50px 40px 80px;
+  text-align: center;
+  background: radial-gradient(circle at center, #ffffff 0%, #ffffff 45%, #798b98 250%);
+}
+
+.titulo-central {
+  width: fit-content;
+  margin: 0 auto 40px;
+  background: #d9d9d9;
+  padding: 16px 90px;
+  border-radius: 22px;
+  font-size: 34px;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: radial-gradient(circle at center, #f1f5f8 0%, #ffffff 45%, #6c8697 550%);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  border-left: 15px solid #393e69;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #d9d9d9;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 450px;
+  height: 300PX;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  background: radial-gradient(circle at center, #ffffff 0%, #ffffff 45%, #6c8697 250%);
+  
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  padding: 16px 10px 18px;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1100px) {
+  .banner-texto h2 {
+    font-size: 64px;
+  }
+
+  .texto-card p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .topo {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .menu {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sobre-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-imagem img {
+    max-height: 420px;
+  }
+
+  .banner {
+    height: 420px;
+  }
+
+  .banner-texto h2 {
+    font-size: 48px;
+  }
+
+  .titulo-central {
+    padding: 14px 40px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    width: 100%;
+    border-radius: 20px;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: 360px;
+    padding: 30px 20px;
+  }
+
+  .countdown {
+    gap: 10px;
+  }
+
+  .time-card span {
+    width: 70px;
+    height: 85px;
+    font-size: 38px;
+  }
+
+  .time-card p {
+    font-size: 14px;
+  }
+
+  .titulo-pill {
+    font-size: 24px;
+  }
+
+  .texto-card p {
+    font-size: 18px;
+  }
+
+  .banner {
+    height: 340px;
+  }
+
+  .banner-texto {
+    top: 20px;
+    left: 20px;
+  }
+
+  .banner-texto h2 {
+    font-size: 36px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
