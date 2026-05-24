@@ -6,7 +6,7 @@ const segundosEl = document.getElementById("segundos");
 const mensagemEl = document.getElementById("mensagem");
 
 // DATA DE INÍCIO DA COPA DO MUNDO 2026
-const dataCopa = new Date("2026-06-11T00:00:00");
+const dataCopa = new Date("2026-06-11T21:00:00-03:00");
 
 // FUNÇÃO PARA DEIXAR O NÚMERO COM 2 DÍGITOS
 function formatarNumero(numero) {

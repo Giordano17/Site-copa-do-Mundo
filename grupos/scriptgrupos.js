@@ -3,7 +3,7 @@ const horasEl = document.getElementById("horas");
 const minutosEl = document.getElementById("minutos");
 const segundosEl = document.getElementById("segundos");
 
-const dataCopa = new Date("2026-06-11T00:00:00");
+const dataCopa = new Date("2026-06-11T21:00:00-03:00");
 
 function formatarNumero(numero) {
   return String(numero).padStart(2, "0");

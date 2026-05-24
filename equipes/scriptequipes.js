@@ -3,7 +3,7 @@ const horasEl = document.getElementById("horas");
 const minutosEl = document.getElementById("minutos");
 const segundosEl = document.getElementById("segundos");
 
-const dataCopa = new Date("2026-06-11T00:00:00");
+const dataCopa = new Date("2026-06-11T21:00:00-03:00");
 
 function formatarNumero(numero) {
   return String(numero).padStart(2, "0");
@@ -34,5 +34,25 @@ function atualizarContador() {
   segundosEl.textContent = formatarNumero(segundos);
 }
 
-atualizarContador();
-setInterval(atualizarContador, 1000);
+const cards = document.querySelectorAll(".card");
+
+function revelarCards() {
+  const alturaTela = window.innerHeight;
+
+  cards.forEach(card => {
+    const posicao = card.getBoundingClientRect().top;
+
+    if (posicao < alturaTela - 100) {
+      card.classList.add("ativo"); // aparece
+    } else {
+      card.classList.remove("ativo"); // some ao subir
+    }
+  });
+}
+
+// executa ao abrir
+revelarCards();
+
+// executa ao rolar
+window.addEventListener("scroll", revelarCards);
+``
