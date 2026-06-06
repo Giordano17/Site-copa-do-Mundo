@@ -1,4 +1,4 @@
-// ELEMENTOS DO HTML
+﻿// ELEMENTOS DO HTML
 const diasEl = document.getElementById("dias");
 const horasEl = document.getElementById("horas");
 const minutosEl = document.getElementById("minutos");

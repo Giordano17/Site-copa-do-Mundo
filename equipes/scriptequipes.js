@@ -1,4 +1,4 @@
-// ELEMENTOS DO HTML
+﻿// ELEMENTOS DO HTML
 const diasEl = document.getElementById("dias");
 const horasEl = document.getElementById("horas");
 const minutosEl = document.getElementById("minutos");
@@ -51,7 +51,7 @@ atualizarContador();
 setInterval(atualizarContador, 1000);
 ``
 
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".cartao");
 
 function revelarCards() {
   const alturaTela = window.innerHeight;

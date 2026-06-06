@@ -1,9 +1,12 @@
-* {
+﻿* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================
+   BASE DO SITE
+========================= */
 body {
   background: #efefef;
   font-family: Arial, Helvetica, sans-serif;
@@ -11,8 +14,10 @@ body {
   padding-top: 110px;
 }
 
-/* HEADER */
-.topo {
+/* =========================
+   HEADER
+========================= */
+.cabecalho {
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -25,72 +30,72 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* LOGO */
-.logo {
+.logotipo {
   z-index: 2;
 }
 
-.logo img {
+.logotipo img {
   width: 55px;
   height: auto;
   display: block;
 }
 
-/* MENU CENTRALIZADO */
-.menu {
+/* =========================
+   MENU
+========================= */
+.navegacao {
   background: #a9c6d9;
   padding: 16px 28px;
   border-radius: 40px;
   display: flex;
   gap: 50px;
-
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.menu a {
+.navegacao a {
   text-decoration: none;
   color: #111;
   font-weight: 800;
   font-size: 16px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
-.menu a:hover {
+.navegacao a:hover {
   opacity: 0.7;
 }
 
-/* CONTADOR NO LADO DIREITO */
-.contador-header {
+/* =========================
+   CONTADOR DO HEADER
+========================= */
+.contador {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.tempo-header {
+.tempoheader {
   width: 75px;
   height: 65px;
   background: #111820;
   border-radius: 14px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
-.tempo-header span {
+.tempoheader span {
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
   line-height: 1;
 }
 
-.tempo-header p {
+.tempoheader p {
   margin-top: 6px;
   color: #ffffff;
   font-size: 9px;
@@ -98,13 +103,166 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+.conteudogrupos {
+  min-height: 70vh;
+  padding: 65px 48px 90px;
+  background: radial-gradient(circle at center, #ffffff 0%, #ffffff 42%, #dce5eb 100%);
+}
+
+.secaogrupos {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
+   TÍTULO PRINCIPAL
+========================= */
+.titulocentral {
+  width: fit-content;
+  margin: 0 auto 60px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  color: #141313;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  position: relative;
+}
+
+.titulocentral::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: #8a8a8a;
+  margin-top: 14px;
+}
+/* =========================
+   GRID DOS GRUPOS
+========================= */
+.gradegrupos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+/* =========================
+   CARDS DOS GRUPOS
+========================= */
+.cartaogrupo {
+  min-height: 225px;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f7fa 48%, #dce5eb 100%);
+  border-radius: 22px;
+  text-decoration: none;
+  color: #111;
+  overflow: hidden;
+  position: relative;
+  border-left: 18px solid #393e69;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.cartaogrupo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.75), rgba(169, 198, 217, 0.16));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cartaogrupo::after {
+  content: "COPA 2026";
+  position: absolute;
+  right: 22px;
+  bottom: 18px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: rgba(57, 62, 105, 0.22);
+}
+
+.cartaogrupo span {
+  position: relative;
+  z-index: 1;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 42px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 rgba(169, 198, 217, 0.55);
+}
+
+/* =========================
+   EFEITOS DOS CARDS
+========================= */
+.cartaogrupo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 38px rgba(0, 0, 0, 0.24);
+  background: linear-gradient(135deg, #ffffff 0%, #edf5fa 45%, #cddce6 100%);
+}
+
+.cartaogrupo:hover::before {
+  opacity: 1;
+}
+
+.cartaogrupo:hover span {
+  color: #1d2344;
+}
+
+/* =========================
+   CARD ESPECIAL - GRUPO C
+========================= */
+.grupoverde {
+  background: linear-gradient(135deg, #ffffff 0%, #edf8f0 48%, #cfe8d7 100%);
+  border-left-color: #247346;
+}
+
+.grupoverde::before {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.78), rgba(59, 143, 88, 0.2));
+}
+
+.grupoverde::after {
+  color: rgba(36, 115, 70, 0.26);
+}
+
+.grupoverde span {
+  text-shadow: 2px 2px 0 rgba(127, 181, 143, 0.45);
+}
+
+.grupoverde:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #e2f4e8 45%, #b8dcc6 100%);
+  box-shadow: 0 22px 38px rgba(26, 105, 58, 0.22);
+}
+
+.grupoverde:hover span {
+  color: #185834;
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
-  background-color: #2c3e50; /* cinza azulado escuro */
+  background-color: #2c3e50;
   color: #ecf0f1;
   padding: 40px 20px;
 }
 
-.footer-container {
+.rodape {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -113,41 +271,40 @@ footer {
   gap: 30px;
 }
 
-.footer-column {
+.coluna {
   flex: 1;
   min-width: 220px;
 }
 
-.footer-column h3 {
+.coluna h3 {
   margin-bottom: 15px;
   font-size: 18px;
   color: #bdc3c7;
-  border-left: 4px solid #2980b9; /* azul destaque */
+  border-left: 4px solid #2980b9;
   padding-left: 10px;
 }
 
-.footer-column ul {
+.coluna ul {
   list-style: none;
 }
 
-.footer-column ul li {
+.coluna ul li {
   margin-bottom: 10px;
   font-size: 15px;
 }
 
-.footer-column ul li a {
+.coluna ul li a {
   color: #ecf0f1;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.footer-column ul li a:hover {
-  color: #3498db; /* azul claro */
+.coluna ul li a:hover {
+  color: #3498db;
   padding-left: 5px;
 }
 
-/* Linha inferior */
-.footer-bottom {
+.copyright {
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
@@ -156,17 +313,122 @@ footer {
   color: #bdc3c7;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .footer-container {
+
+/* =========================
+   BANDEIRAS EM IMAGEM
+========================= */
+.bandeira {
+  width: 58px;
+  height: 40px;
+  flex: 0 0 auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 1100px) {
+  .gradegrupos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cartaogrupo span {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-top: 165px;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .navegacao {
+    position: static;
+    transform: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contador {
+    margin-left: 0;
+  }
+
+  .gradegrupos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .titulocentral {
+    font-size: 30px;
+    padding: 16px 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 210px;
+  }
+
+  .navegacao {
+    width: 100%;
+    border-radius: 20px;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .navegacao a {
+    font-size: 14px;
+  }
+
+  .contador {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .conteudogrupos {
+    padding: 45px 20px 70px;
+  }
+
+  .titulocentral {
+    font-size: 24px;
+    padding: 14px 26px;
+    margin-bottom: 45px;
+  }
+
+  .gradegrupos {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cartaogrupo {
+    min-height: 155px;
+    border-left-width: 14px;
+  }
+
+  .cartaogrupo span {
+    font-size: 30px;
+  }
+
+  .rodape {
     flex-direction: column;
     text-align: center;
   }
 
-  .footer-column h3 {
+  .coluna h3 {
     border-left: none;
     border-bottom: 2px solid #3498db;
     padding-left: 0;
     padding-bottom: 5px;
   }
 }
+
+

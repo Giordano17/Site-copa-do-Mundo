@@ -1,4 +1,4 @@
-/* RESET */
+﻿/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 /* HEADER */
-.topo {
+.cabecalho {
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -27,13 +27,13 @@ body {
   box-sizing: border-box;
 }
 
-.logo img {
+.logotipo img {
   width: 55px;
   height: auto;
   display: block;
 }
 
-.menu {
+.navegacao {
   background: #a9c6d9;
   padding: 16px 28px;
   border-radius: 40px;
@@ -44,7 +44,7 @@ body {
   transform: translateX(-50%);
 }
 
-.menu a {
+.navegacao a {
   text-decoration: none;
   color: #111;
   font-weight: 800;
@@ -52,23 +52,23 @@ body {
   transition: 0.3s;
 }
 
-.menu a:hover {
+.navegacao a:hover {
   opacity: 0.7;
 }
 
 /* HERO */
 
-.hero {
+.destaque {
   width: 100%;
   min-height: 560px;
-  background: #d9e5ed;
+  background: #e6eff6;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 90px 20px 70px;
 }
 
-.countdown-box {
+.contagem {
   width: 100%;
   max-width: 1100px;
   background: #e3eef5;
@@ -80,7 +80,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.hero-badge {
+.etiqueta {
   display: inline-block;
   background: transparent;
   color: #111;
@@ -94,7 +94,7 @@ body {
   text-transform: uppercase;
 }
 
-.countdown-box h1 {
+.contagem h1 {
   font-size: 54px;
   margin: 0 0 35px;
   font-family: Georgia, 'Times New Roman', serif;
@@ -102,7 +102,7 @@ body {
   font-weight: 800;
 }
 
-.countdown {
+.temporizador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ body {
   flex-wrap: wrap;
 }
 
-.time-card {
+.tempocard {
   width: 165px;
   height: 135px;
   background: #151f26;
@@ -128,12 +128,12 @@ body {
   transition: 0.3s ease;
 }
 
-.time-card:hover {
+.tempocard:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 36px rgba(61, 101, 128, 0.35);
 }
 
-.time-card span {
+.tempocard span {
   display: block;
   width: auto;
   height: auto;
@@ -148,7 +148,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.time-card p {
+.tempocard p {
   margin-top: 12px;
   font-size: 11px;
   font-weight: 700;
@@ -157,7 +157,7 @@ body {
   color: rgba(255, 255, 255, 0.85);
 }
 
-.countdown-subtexto {
+.legenda {
   max-width: 700px;
   margin: 36px auto 0;
   font-size: 20px;
@@ -171,20 +171,20 @@ body {
   padding: 0px 0px 0px 40px;
 }
 
-.sobre-conteudo {
+.layoutsobre {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   align-items: center;
   gap: 30px;
 }
 
-.sobre-texto {
+.textosobre {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.titulo-pill {
+.tituloetiqueta {
  display: inline-block;
   width: fit-content;
   background: #1f1f1f;
@@ -199,7 +199,7 @@ body {
   margin-bottom: 22px;
 }
 
-.texto-card {
+.textocard {
   background: #f8f8f8;
   border-radius: 24px;
   padding: 32px;
@@ -208,7 +208,7 @@ body {
   border-left: 8px solid #c9c9c9;
 }
 
-.texto-card p {
+.textocard p {
   font-size: 28px;
   line-height: 1.5;
   font-family: Georgia, 'Times New Roman', serif;
@@ -216,7 +216,7 @@ body {
   margin: 0;
 }
 
-.sobre-imagem img {
+.imagemsobre img {
   width: 100%;
   height: 100%;
   max-height: 520px;
@@ -242,20 +242,20 @@ body {
   filter: brightness(0.65);
 }
 
-.overlay {
+.sobreposicao {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.20);
 }
 
-.banner-texto {
+.chamada {
   position: absolute;
   top: 30px;
   left: 30px;
   z-index: 2;
 }
 
-.banner-texto h2 {
+.chamada h2 {
   color: #fff;
   font-size: 86px;
   line-height: 0.95;
@@ -271,7 +271,7 @@ body {
   background: radial-gradient(circle at center, #ffffff 0%, #ffffff 45%, #798792 250%);
 }
 
-.titulo-central {
+.titulocentral {
   width: fit-content;
   margin: 0 auto 40px;
   background: #d9d9d9;
@@ -282,14 +282,14 @@ body {
   font-family: Georgia, 'Times New Roman', serif;
 }
 
-.cards {
+.gradecards {
   display: flex;
   justify-content: center;
   gap: 22px;
   flex-wrap: wrap;
 }
 
-.card {
+.cartao {
   background: #d9d9d9;
   border-radius: 20px;
   overflow: hidden;
@@ -297,18 +297,18 @@ body {
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.cartao:hover {
   transform: translateY(-6px);
 }
 
-.card img {
+.cartao img {
   width: 100%;
   height: 165px;
   object-fit: cover;
   display: block;
 }
 
-.card h3 {
+.cartao h3 {
   padding: 16px 10px 18px;
   font-size: 22px;
   font-weight: 900;
@@ -316,33 +316,33 @@ body {
 
 /* RESPONSIVO */
 @media (max-width: 1100px) {
-  .banner-texto h2 {
+  .chamada h2 {
     font-size: 64px;
   }
 
-  .texto-card p {
+  .textocard p {
     font-size: 22px;
   }
 }
 
 @media (max-width: 900px) {
-  .topo {
+  .cabecalho {
     flex-direction: column;
     gap: 16px;
     padding: 20px;
   }
 
-  .menu {
+  .navegacao {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .sobre-conteudo {
+  .layoutsobre {
     grid-template-columns: 1fr;
   }
 
-  .sobre-imagem img {
+  .imagemsobre img {
     max-height: 420px;
   }
 
@@ -350,52 +350,52 @@ body {
     height: 420px;
   }
 
-  .banner-texto h2 {
+  .chamada h2 {
     font-size: 48px;
   }
 
-  .titulo-central {
+  .titulocentral {
     padding: 14px 40px;
     font-size: 28px;
   }
 }
 
 @media (max-width: 600px) {
-  .menu {
+  .navegacao {
     width: 100%;
     border-radius: 20px;
     gap: 14px;
     padding: 14px;
   }
 
-  .menu a {
+  .navegacao a {
     font-size: 14px;
   }
 
-  .hero {
+  .destaque {
     min-height: 360px;
     padding: 30px 20px;
   }
 
-  .countdown {
+  .temporizador {
     gap: 10px;
   }
 
-  .time-card span {
+  .tempocard span {
     width: 70px;
     height: 85px;
     font-size: 38px;
   }
 
-  .time-card p {
+  .tempocard p {
     font-size: 14px;
   }
 
-  .titulo-pill {
+  .tituloetiqueta {
     font-size: 24px;
   }
 
-  .texto-card p {
+  .textocard p {
     font-size: 18px;
   }
 
@@ -403,16 +403,16 @@ body {
     height: 340px;
   }
 
-  .banner-texto {
+  .chamada {
     top: 20px;
     left: 20px;
   }
 
-  .banner-texto h2 {
+  .chamada h2 {
     font-size: 36px;
   }
 
-  .card {
+  .cartao {
     width: 100%;
     max-width: 320px;
   }
@@ -424,7 +424,7 @@ footer {
   padding: 40px 20px;
 }
 
-.footer-container {
+.rodape {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -433,12 +433,12 @@ footer {
   gap: 30px;
 }
 
-.footer-column {
+.coluna {
   flex: 1;
   min-width: 220px;
 }
 
-.footer-column h3 {
+.coluna h3 {
   margin-bottom: 15px;
   font-size: 18px;
   color: #bdc3c7;
@@ -446,28 +446,28 @@ footer {
   padding-left: 10px;
 }
 
-.footer-column ul {
+.coluna ul {
   list-style: none;
 }
 
-.footer-column ul li {
+.coluna ul li {
   margin-bottom: 10px;
   font-size: 15px;
 }
 
-.footer-column ul li a {
+.coluna ul li a {
   color: #ecf0f1;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.footer-column ul li a:hover {
+.coluna ul li a:hover {
   color: #3498db; /* azul claro */
   padding-left: 5px;
 }
 
 /* Linha inferior */
-.footer-bottom {
+.copyright {
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
@@ -478,12 +478,12 @@ footer {
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .footer-container {
+  .rodape {
     flex-direction: column;
     text-align: center;
   }
 
-  .footer-column h3 {
+  .coluna h3 {
     border-left: none;
     border-bottom: 2px solid #3498db;
     padding-left: 0;
