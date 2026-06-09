@@ -1,24 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copa do Mundo</title>
+    <title>Estádios - Copa do Mundo</title>
     <link rel="stylesheet" href="./styleestadios.css" />
-    
 </head>
 <body>
-  <header class="destaque">
+  <header class="cabecalho">
     <div class="logotipo">
-      <a href="/Site-copa-do-Mundo/abertura/indexabertura.html">
+      <a href="/abertura/indexabertura.html">
         <img src="./img/logo-abertura.png" alt="Logo Copa do Mundo">
       </a>
     </div>
     <nav class="navegacao">
-      <a href="/Site-copa-do-Mundo/abertura/indexabertura.html">INICIO</a>
-      <a href="/Site-copa-do-Mundo/equipes/indexequipes.html">EQUIPES</a>
-      <a href="/Site-copa-do-Mundo/estadios/indexestadios.html">ESTÁDIOS</a>
-      <a href="/Site-copa-do-Mundo/grupos/indexgrupos.html">GRUPOS</a>
+      <a href="/abertura/indexabertura.html">INICIO</a>
+      <a href="/equipes/indexequipes.html">EQUIPES</a>
+      <a href="/estadios/indexestadios.html">ESTÁDIOS</a>
+      <a href="/grupos/indexgrupos.html">GRUPOS</a>
     </nav>
     <div class="contador">
       <div class="tempoheader">
@@ -42,7 +41,336 @@
       </div>
     </div>
   </header>
-  <h1>2</h1>
+
+  <main class="conteudoestadios">
+    <section class="secaoestadios" aria-labelledby="titulo-estadios">
+      <div class="cabecalhopagina revelar">
+        <span class="etiquetapagina">COPA DO MUNDO 2026</span>
+        <h1 id="titulo-estadios">ESTÁDIOS DA COPA DO MUNDO</h1>
+        <p>A edição de 2026 será disputada em 16 estádios distribuídos entre Canadá, México e Estados Unidos.</p>
+      </div>
+
+      <div class="resumoestadios revelar" aria-label="Resumo dos estádios">
+        <div class="itemresumo">
+          <strong>16</strong>
+          <span>Estádios</span>
+        </div>
+        <div class="itemresumo">
+          <strong>3</strong>
+          <span>Países</span>
+        </div>
+        <div class="itemresumo">
+          <strong>104</strong>
+          <span>Jogos</span>
+        </div>
+      </div>
+
+      <section class="blocopais paiscanada revelar" aria-labelledby="titulo-canada">
+        <div class="cabecalhopais">
+          <div>
+            <span class="marcapais"></span>
+            <h2 id="titulo-canada">Canadá</h2>
+          </div>
+          <p>2 estádios</p>
+        </div>
+
+        <div class="gradeestadios">
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/estadio-toronto.jpg" alt="Toronto Stadium em Toronto">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Toronto, Ontario</span>
+              <h3>Toronto Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Toronto Stadium</span>
+                <span>Estádio: BMO Field</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/bc-place-vancouver.jpg" alt="BC Place Vancouver em Vancouver">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Vancouver, British Columbia</span>
+              <h3>BC Place Vancouver</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: BC Place Vancouver</span>
+                <span>Estádio: BC Place</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="blocopais paismexico revelar" aria-labelledby="titulo-mexico">
+        <div class="cabecalhopais">
+          <div>
+            <span class="marcapais"></span>
+            <h2 id="titulo-mexico">México</h2>
+          </div>
+          <p>3 estádios</p>
+        </div>
+
+        <div class="gradeestadios">
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/estadio-guadalajara.jpg" alt="Estadio Guadalajara em Guadalajara">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Guadalajara, Jalisco</span>
+              <h3>Estadio Guadalajara</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Estadio Guadalajara</span>
+                <span>Estádio: Estadio Akron</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/estadio-azteca.jpg" alt="Mexico City Stadium na Cidade do México">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Cidade do México</span>
+              <h3>Mexico City Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Mexico City Stadium</span>
+                <span>Estádio: Estadio Azteca</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/estadio-monterrey.jpg" alt="Estadio Monterrey em Monterrey">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Monterrey, Nuevo León</span>
+              <h3>Estadio Monterrey</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Estadio Monterrey</span>
+                <span>Estádio: Estadio BBVA</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="blocopais paiseua revelar" aria-labelledby="titulo-eua">
+        <div class="cabecalhopais">
+          <div>
+            <span class="marcapais"></span>
+            <h2 id="titulo-eua">Estados Unidos</h2>
+          </div>
+          <p>11 estádios</p>
+        </div>
+
+        <div class="gradeestadios">
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/atlanta-stadium.jpg" alt="Atlanta Stadium em Atlanta">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Atlanta, Georgia</span>
+              <h3>Atlanta Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Atlanta Stadium</span>
+                <span>Estádio: Mercedes-Benz Stadium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/boston-stadium.jpg" alt="Boston Stadium em Foxborough">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Boston / Foxborough, Massachusetts</span>
+              <h3>Boston Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Boston Stadium</span>
+                <span>Estádio: Gillette Stadium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/dallas-stadium.jpg" alt="Dallas Stadium em Arlington">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Dallas / Arlington, Texas</span>
+              <h3>Dallas Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Dallas Stadium</span>
+                <span>Estádio: AT&amp;T Stadium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/houston-stadium.jpg" alt="Houston Stadium em Houston">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Houston, Texas</span>
+              <h3>Houston Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Houston Stadium</span>
+                <span>Estádio: NRG Stadium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/kansas-city-stadium.jpg" alt="Kansas City Stadium em Kansas City">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Kansas City, Missouri</span>
+              <h3>Kansas City Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Kansas City Stadium</span>
+                <span>Estádio: Arrowhead Stadium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/los-angeles-stadium.jpg" alt="Los Angeles Stadium em Inglewood">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Los Angeles / Inglewood, California</span>
+              <h3>Los Angeles Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Los Angeles Stadium</span>
+                <span>Estádio: SoFi Stadium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/miami-stadium.jpg" alt="Miami Stadium em Miami Gardens">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Miami / Miami Gardens, Florida</span>
+              <h3>Miami Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Miami Stadium</span>
+                <span>Estádio: Hard Rock Stadium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/new-york-new-jersey-stadium.jpg" alt="New York New Jersey Stadium em East Rutherford">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">New York New Jersey / East Rutherford</span>
+              <h3>New York New Jersey Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: New York New Jersey Stadium</span>
+                <span>Estádio: MetLife Stadium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/philadelphia-stadium.jpg" alt="Philadelphia Stadium em Philadelphia">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Philadelphia, Pennsylvania</span>
+              <h3>Philadelphia Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Philadelphia Stadium</span>
+                <span>Estádio: Lincoln Financial Field</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/san-francisco-bay-area-stadium.jpg" alt="San Francisco Bay Area Stadium em Santa Clara">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">San Francisco Bay Area / Santa Clara</span>
+              <h3>San Francisco Bay Area Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: San Francisco Bay Area Stadium</span>
+                <span>Estádio: Levi's Stadium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartaoestadio revelar">
+            <div class="imagemestadio">
+              <img src="./img/estadios/seattle-stadium.jpg" alt="Seattle Stadium em Seattle">
+            </div>
+            <div class="conteudoestadio">
+              <span class="cidadeestadio">Seattle, Washington</span>
+              <h3>Seattle Stadium</h3>
+              <div class="detalhesestadio">
+                <span>Nome FIFA: Seattle Stadium</span>
+                <span>Estádio: Lumen Field</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="acaoprecos revelar" aria-labelledby="titulo-precos">
+        <a class="cartaoprecos" href="./preços/indexprecos.html">
+          <div>
+            <span>INGRESSOS</span>
+            <h2 id="titulo-precos">Ver preços por estádio</h2>
+          </div>
+          <strong>ABRIR</strong>
+        </a>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rodape">
+      <div class="coluna">
+        <h3>Contato</h3>
+        <ul>
+          <li>(11) 99999-9999</li>
+          <li>(11) 98888-8888</li>
+        </ul>
+      </div>
+
+      <div class="coluna">
+        <h3>Marcas</h3>
+        <ul>
+          <li><a href="https://www.nike.com.br/">Nike</a></li>
+          <li><a href="https://www.adidas.com.br/">Adidas</a></li>
+          <li><a href="https://www.puma.com.br/">Puma</a></li>
+          <li><a href="https://www.newbalance.com.br/">New Balance</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna">
+        <h3>Redes Sociais</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © 2026 - Seu Site. Todos os direitos reservados.
+    </div>
+  </footer>
+
   <script src="./scriptestadios.js"></script>
 </body>
 </html>

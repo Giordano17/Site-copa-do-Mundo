@@ -1,97 +1,167 @@
-﻿# Página de Grupos - Copa do Mundo 2026
+﻿# Site Copa do Mundo 2026
 
 ## Descrição
 
-Esta página apresenta os grupos da Copa do Mundo 2026 de forma organizada, visual e responsiva.
-O objetivo da página é permitir que o usuário acesse rapidamente cada grupo da competição e visualize suas seleções participantes, bandeiras e partidas.
+Este projeto é um site estático sobre a Copa do Mundo 2026, desenvolvido com HTML, CSS puro e JavaScript.
 
-A página mantém o mesmo padrão visual do site principal, utilizando cards, sombras suaves, bordas arredondadas, tipografia destacada e layout adaptável para desktop e mobile.
+O site apresenta uma página inicial com contagem regressiva para a competição, informações sobre o torneio, navegação entre seções, listagem de equipes classificadas, página de grupos e páginas individuais com integrantes e partidas de cada grupo.
+
+O visual segue um padrão moderno, com cards, sombras suaves, bordas arredondadas, tipografia destacada e layout responsivo.
 
 ## Funcionalidades
 
-- Exibição dos grupos da Copa do Mundo 2026.
-- Cards clicáveis para acessar cada grupo individualmente.
-- Páginas separadas para os grupos de A até L.
-- Destaque visual especial para o Grupo C.
-- Bandeiras dos países carregadas como imagens locais.
-- Lista de seleções participantes em cada grupo.
-- Exibição dos jogos com data e horário.
-- Contador regressivo no cabeçalho.
-- Layout responsivo para diferentes tamanhos de tela.
+- Página inicial com banner, texto informativo e cards de navegação.
+- Contador regressivo para a Copa do Mundo 2026.
+- Menu de navegação entre Início, Equipes, Estádios e Grupos.
+- Página de equipes organizada por regiões e continentes.
+- Cards de seleções com imagens e links externos para informações da FIFA.
+- Página de grupos com cards clicáveis dos grupos A até L.
+- Páginas individuais para cada grupo.
+- Exibição dos integrantes de cada grupo com bandeiras em formato de imagem.
+- Lista de jogos dos grupos com equipes, datas e horários.
+- Rodapé com contato, marcas e redes sociais.
+- Layout responsivo para desktop e mobile.
 
 ## Tecnologias Utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
+- Imagens locais
 
-## Estrutura da Página
+## Estrutura do Projeto
 
-A página principal dos grupos está localizada em:
+```text
+Site-copa-do-Mundo/
+├── abertura/
+│   ├── indexabertura.html
+│   ├── styleabertura.css
+│   ├── script.js
+│   └── img/
+│
+├── equipes/
+│   ├── indexequipes.html
+│   ├── styleequipes.css
+│   ├── scriptequipes.js
+│   └── img/
+│
+├── estadios/
+│   ├── indexestadios.html
+│   ├── styleestadios.css
+│   ├── scriptestadios.js
+│   └── img/
+│
+├── grupos/
+│   ├── indexgrupos.html
+│   ├── stylegrupos.css
+│   ├── scriptgrupos.js
+│   ├── img/
+│   ├── grupo-a/
+│   ├── grupo-b/
+│   ├── grupo-c/
+│   ├── grupo-d/
+│   ├── grupo-e/
+│   ├── grupo-f/
+│   ├── grupo-g/
+│   ├── grupo-h/
+│   ├── grupo-i/
+│   ├── grupo-j/
+│   ├── grupo-k/
+│   └── grupo-l/
+│
+└── README.md
+```
+
+## Páginas do Site
+
+## Início
+
+A página inicial apresenta a identidade visual do projeto, uma contagem regressiva para a Copa do Mundo 2026, uma seção informativa sobre o torneio, um banner de destaque e cards de navegação para as demais páginas.
+
+Arquivo principal:
+
+```text
+abertura/indexabertura.html
+```
+
+## Equipes
+
+A página de equipes exibe seleções relacionadas à Copa do Mundo 2026, organizadas por sede, continente ou região.
+
+Cada equipe aparece em formato de card com imagem e link externo para a página correspondente no site da FIFA.
+
+Arquivo principal:
+
+```text
+equipes/indexequipes.html
+```
+
+## Estádios
+
+A página de estádios possui a estrutura base do site, mantendo o cabeçalho, a navegação, o contador e o padrão visual utilizado nas demais páginas.
+
+Arquivo principal:
+
+```text
+estadios/indexestadios.html
+```
+
+## Grupos
+
+A página de grupos apresenta os grupos da Copa do Mundo 2026 em cards clicáveis. Cada card redireciona para uma página individual do grupo correspondente.
+
+Arquivo principal:
 
 ```text
 grupos/indexgrupos.html
 ```
 
-Ela possui cards que redirecionam para as páginas individuais dos grupos:
+As páginas individuais dos grupos exibem:
 
-```text
-grupo-a/index-a.html
-grupo-b/index-b.html
-grupo-c/index-c.html
-grupo-d/index-d.html
-grupo-e/index-e.html
-grupo-f/index-f.html
-grupo-g/index-g.html
-grupo-h/index-h.html
-grupo-i/index-i.html
-grupo-j/index-j.html
-grupo-k/index-k.html
-grupo-l/index-l.html
-```
-
-Cada grupo possui sua própria pasta com:
-
-```text
-index
-style
-script
-pasta img com as bandeiras dos países
-```
+- Nome do grupo.
+- Seleções participantes.
+- Bandeiras dos países.
+- Resumo do grupo.
+- Jogos com data e horário.
+- Rodapé padronizado.
 
 ## Organização Visual
 
-O site utiliza um padrão visual moderno, com:
+O site segue um padrão visual único em todas as páginas, utilizando:
 
-- Fundo claro em tons de azul, cinza e branco.
+- Fundo claro com tons de azul, cinza e branco.
 - Cards com bordas arredondadas.
-- Sombras suaves para profundidade.
-- Efeito de hover nos elementos clicáveis.
-- Títulos com destaque visual.
-- Bandeiras exibidas por meio da tag `<img>`.
-- Separação entre a área de integrantes do grupo e a área de jogos.
+- Sombras suaves.
+- Efeitos de hover.
+- Títulos destacados.
+- Imagens locais.
+- Layout em grid.
+- Design responsivo.
 
 ## JavaScript
 
-O JavaScript é utilizado principalmente para:
+O JavaScript é utilizado para controlar elementos interativos do site, principalmente:
 
-- Contador regressivo da Copa do Mundo.
-- Animações de entrada dos elementos na tela.
-- Pequenas interações visuais da página.
+- Contador regressivo.
+- Atualização dinâmica de dias, horas, minutos e segundos.
+- Animações visuais de entrada em algumas páginas.
 
-## Responsividade
+## Como Executar o Projeto
 
-A página foi construída para se adaptar a diferentes dispositivos.
-No desktop, os cards são exibidos em formato de grid.
-No mobile, os elementos se reorganizam para melhor leitura e navegação.
+Como o projeto é feito com HTML, CSS e JavaScript puro, não é necessário instalar dependências.
 
-## Observações
+Para visualizar o site, abra o arquivo principal no navegador:
 
-- O projeto não utiliza bibliotecas externas.
-- As imagens das bandeiras são salvas localmente dentro da pasta `img` de cada grupo.
-- As classes foram organizadas com nomes em português para facilitar a leitura e manutenção do código.
-- A estrutura mantém os elementos comuns do site, como cabeçalho, navegação, contador e rodapé.
+```text
+abertura/indexabertura.html
+```
+
+Também é possível executar o projeto usando um servidor local, como a extensão Live Server do Visual Studio Code.
 
 ## Status do Projeto
 
-Página de grupos criada e estruturada com páginas individuais para todos os grupos da Copa do Mundo 2026.
+O site possui páginas principais estruturadas, navegação entre seções, página de equipes, página de grupos e páginas individuais dos grupos da Copa do Mundo 2026.
+
+## Autor
+
+Projeto desenvolvido para estudo e prática de criação de sites com HTML, CSS e JavaScript.

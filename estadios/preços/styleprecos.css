@@ -92,13 +92,13 @@ body {
   text-transform: uppercase;
 }
 
-.conteudoestadios {
+.conteudoprecos {
   min-height: 70vh;
   padding: 65px 48px 90px;
   background: radial-gradient(circle at center, #ffffff 0%, #ffffff 42%, #dce5eb 100%);
 }
 
-.secaoestadios {
+.secaoprecos {
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -125,30 +125,29 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
-  position: relative;
 }
 
 .cabecalhopagina h1::after {
   content: "";
   display: block;
   width: 100%;
-  max-width: 650px;
+  max-width: 580px;
   height: 6px;
   margin: 16px auto 0;
   background: #8a8a8a;
 }
 
 .cabecalhopagina p {
-  max-width: 720px;
+  max-width: 760px;
   margin: 24px auto 0;
-  font-size: 19px;
-  line-height: 1.6;
   color: #343434;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.resumoestadios {
-  max-width: 760px;
-  margin: 0 auto 54px;
+.resumoprecos {
+  max-width: 820px;
+  margin: 0 auto 46px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
@@ -168,7 +167,7 @@ body {
 
 .itemresumo strong {
   color: #111820;
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 900;
   line-height: 1;
 }
@@ -182,211 +181,79 @@ body {
   text-transform: uppercase;
 }
 
-.blocopais {
-  margin-top: 52px;
+.envoltoriotabela {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
+  border-left: 14px solid #393e69;
 }
 
-.cabecalhopais {
-  margin-bottom: 26px;
-  padding: 0 4px 16px;
-  border-bottom: 1px solid rgba(17, 24, 32, 0.14);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 20px;
+.tabelaprecos {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
 }
 
-.cabecalhopais div {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+.tabelaprecos th,
+.tabelaprecos td {
+  padding: 17px 18px;
+  border-bottom: 1px solid rgba(17, 24, 32, 0.1);
+  text-align: left;
+  vertical-align: top;
 }
 
-.marcapais {
-  width: 14px;
-  height: 46px;
-  border-radius: 999px;
-  display: inline-block;
-  background: #393e69;
-}
-
-.cabecalhopais h2 {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 36px;
+.tabelaprecos th {
+  background: #111820;
+  color: #ffffff;
+  font-size: 12px;
   font-weight: 900;
-  color: #111820;
-}
-
-.cabecalhopais p {
-  color: #393e69;
-  font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
+}
+
+.tabelaprecos td {
+  color: #222;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.tabelaprecos tbody tr:nth-child(even) {
+  background: #f3f7fa;
+}
+
+.tabelaprecos tbody tr:hover {
+  background: #e7f0f6;
+}
+
+.tabelaprecos td:nth-child(5) {
+  color: #111820;
+  font-weight: 900;
   white-space: nowrap;
 }
 
-.paiscanada .marcapais {
-  background: #b42b33;
-}
-
-.paismexico .marcapais {
-  background: #247346;
-}
-
-.paiseua .marcapais {
-  background: #393e69;
-}
-
-.gradeestadios {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-  gap: 28px;
-}
-
-.cartaoestadio {
-  min-height: 385px;
-  background: linear-gradient(135deg, #ffffff 0%, #f6f9fb 54%, #dce5eb 100%);
-  border-radius: 8px;
-  overflow: hidden;
-  border-left: 12px solid #393e69;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.paiscanada .cartaoestadio {
-  border-left-color: #b42b33;
-}
-
-.paismexico .cartaoestadio {
-  border-left-color: #247346;
-}
-
-.cartaoestadio:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 22px 38px rgba(0, 0, 0, 0.23);
-}
-
-.imagemestadio {
-  width: 100%;
-  height: 190px;
-  background: #cfd9e0;
-  overflow: hidden;
-}
-
-.imagemestadio img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.cartaoestadio:hover .imagemestadio img {
-  transform: scale(1.04);
-}
-
-.conteudoestadio {
-  flex: 1;
-  padding: 22px 22px 24px;
-  display: flex;
-  flex-direction: column;
-}
-
-.cidadeestadio {
-  color: #393e69;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-}
-
-.conteudoestadio h3 {
-  margin-top: 10px;
-  color: #111820;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 27px;
-  line-height: 1.1;
-  font-weight: 900;
-}
-
-.detalhesestadio {
-  margin-top: auto;
-  padding-top: 18px;
-  display: grid;
-  gap: 8px;
-}
-
-.detalhesestadio span {
-  min-height: 34px;
-  padding: 9px 12px;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(17, 24, 32, 0.08);
-  border-radius: 6px;
-  color: #222;
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.25;
-}
-
-.acaoprecos {
-  margin-top: 60px;
-}
-
-.cartaoprecos {
-  min-height: 145px;
-  padding: 30px 34px;
-  background-color: #f8fbfc;
-  border-left: 14px solid #393e69;
-  border-radius: 8px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
-  color: #111820;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-}
-
-.cartaoprecos:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 22px 38px rgba(0, 0, 0, 0.23);
-  background: linear-gradient(135deg, #ffffff 0%, #edf5fa 45%, #cddce6 100%);
-}
-
-.cartaoprecos span {
-  display: block;
-  color: #393e69;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.cartaoprecos h2 {
-  margin-top: 10px;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 34px;
-  line-height: 1.1;
-  font-weight: 900;
-}
-
-.cartaoprecos strong {
-  min-width: 98px;
+.botaovoltar {
+  width: fit-content;
   min-height: 54px;
-  padding: 0 20px;
+  margin: 34px auto 0;
+  padding: 0 26px;
   background: #111820;
   border-radius: 8px;
   color: #ffffff;
+  text-decoration: none;
   font-size: 13px;
   font-weight: 900;
   letter-spacing: 2px;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.botaovoltar:hover {
+  opacity: 0.88;
+  transform: translateY(-4px);
 }
 
 footer {
@@ -457,12 +324,6 @@ footer {
   transform: translateY(0);
 }
 
-@media (max-width: 1100px) {
-  .conteudoestadio h3 {
-    font-size: 24px;
-  }
-}
-
 @media (max-width: 900px) {
   body {
     padding-top: 250px;
@@ -486,15 +347,11 @@ footer {
     margin-left: 0;
   }
 
-  .conteudoestadios {
+  .conteudoprecos {
     padding: 50px 30px 75px;
   }
 
   .cabecalhopagina h1 {
-    font-size: 31px;
-  }
-
-  .cabecalhopais h2 {
     font-size: 31px;
   }
 }
@@ -520,7 +377,7 @@ footer {
     justify-content: center;
   }
 
-  .conteudoestadios {
+  .conteudoprecos {
     padding: 42px 18px 65px;
   }
 
@@ -532,41 +389,12 @@ footer {
     font-size: 16px;
   }
 
-  .resumoestadios {
+  .resumoprecos {
     grid-template-columns: 1fr;
-    margin-bottom: 44px;
   }
 
-  .cabecalhopais {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .cabecalhopais h2 {
-    font-size: 28px;
-  }
-
-  .gradeestadios {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .cartaoestadio {
-    min-height: 0;
-  }
-
-  .imagemestadio {
-    height: 175px;
-  }
-
-  .cartaoprecos {
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 26px;
-  }
-
-  .cartaoprecos h2 {
-    font-size: 27px;
+  .itemresumo strong {
+    font-size: 30px;
   }
 
   .rodape {
