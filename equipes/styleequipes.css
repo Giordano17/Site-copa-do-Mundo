@@ -1,9 +1,11 @@
-﻿* {
+/* Remove margens e padroes do navegador. */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Define a base visual da pagina. */
 body {
   background: #efefef;
   font-family: Arial, Helvetica, sans-serif;
@@ -12,6 +14,7 @@ body {
 }
 
 /* HEADER */
+/* Estiliza o cabecalho fixo. */
 .cabecalho {
   background: #ffffff;
   display: flex;
@@ -26,10 +29,12 @@ body {
 }
 
 /* LOGO */
+/* Posiciona o bloco do logo. */
 .logotipo {
   z-index: 2;
 }
 
+/* Ajusta a imagem do logo. */
 .logotipo img {
   width: 55px;
   height: auto;
@@ -37,6 +42,7 @@ body {
 }
 
 /* MENU CENTRALIZADO */
+/* Organiza o menu de navegacao. */
 .navegacao {
   background: #a9c6d9;
   padding: 16px 28px;
@@ -49,6 +55,7 @@ body {
   transform: translateX(-50%);
 }
 
+/* Estiliza os links do menu. */
 .navegacao a {
   text-decoration: none;
   color: #111;
@@ -57,11 +64,13 @@ body {
   transition: 0.3s;
 }
 
+/* Define o hover dos links do menu. */
 .navegacao a:hover {
   opacity: 0.7;
 }
 
 /* CONTADOR NO LADO DIREITO */
+/* Organiza o contador do topo. */
 .contador {
   margin-left: auto;
   display: flex;
@@ -69,6 +78,7 @@ body {
   gap: 10px;
 }
 
+/* Estiliza cada bloco do contador. */
 .tempoheader {
   width: 75px;
   height: 65px;
@@ -83,6 +93,7 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
+/* Estiliza os numeros do contador. */
 .tempoheader span {
   color: #ffffff;
   font-size: 28px;
@@ -90,6 +101,7 @@ body {
   line-height: 1;
 }
 
+/* Estiliza os rotulos do contador. */
 .tempoheader p {
   margin-top: 6px;
   color: #ffffff;
@@ -99,12 +111,14 @@ body {
   text-transform: uppercase;
 }
 
+/* Estiliza a secao relacionada. */
 .relacionados {
   padding: 50px 40px 80px;
   text-align: center;
   background: radial-gradient(circle at center, #ffffff 0%, #ffffff 45%, #798b98 250%);
 }
 
+/* Estiliza titulos da pagina. */
 .titulocentral {
   width: fit-content;
   margin: 0 auto 40px;
@@ -119,6 +133,7 @@ body {
   border-left: 15px solid #393e69;
 }
 
+/* Organiza os itens em grade. */
 .gradecards {
   display: flex;
   justify-content: center;
@@ -126,6 +141,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Estiliza os cards da secao. */
 .cartao {
   background: #d9d9d9;
   border-radius: 5px;
@@ -138,10 +154,12 @@ body {
   
 }
 
+/* Estiliza os cards da secao. */
 .cartao:hover {
   transform: translateY(-6px);
 }
 
+/* Estiliza os cards da secao. */
 .cartao img {
   width: 100%;
   height: 240px;
@@ -149,6 +167,7 @@ body {
   display: block;
 }
 
+/* Estiliza os cards da secao. */
 .cartao h3 {
   padding: 16px 10px 18px;
   font-size: 22px;
@@ -157,52 +176,65 @@ body {
 }
 
 /* RESPONSIVO */
+/* Ajustes responsivos da pagina. */
 @media (max-width: 1100px) {
+  /* Estiliza chamada h2. */
   .chamada h2 {
     font-size: 64px;
   }
 
+  /* Estiliza textocard p. */
   .textocard p {
     font-size: 22px;
   }
 }
 
+/* Ajustes responsivos da pagina. */
 @media (max-width: 900px) {
+  /* Estiliza o cabecalho fixo. */
   .cabecalho {
     flex-direction: column;
     gap: 16px;
     padding: 20px;
   }
 
+  /* Organiza o menu de navegacao. */
   .navegacao {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  /* Estiliza a secao sobre. */
   .layoutsobre {
     grid-template-columns: 1fr;
   }
 
+  /* Estiliza a secao sobre. */
   .imagemsobre img {
     max-height: 420px;
   }
 
+  /* Estiliza o banner da pagina. */
   .banner {
     height: 420px;
   }
 
+  /* Estiliza chamada h2. */
   .chamada h2 {
     font-size: 48px;
   }
 
+  /* Estiliza titulos da pagina. */
   .titulocentral {
     padding: 14px 40px;
     font-size: 28px;
   }
 }
 
+/* Ajustes responsivos da pagina. */
 @media (max-width: 600px) {
+  /* Organiza o menu de navegacao. */
   .navegacao {
     width: 100%;
     border-radius: 20px;
@@ -210,62 +242,75 @@ body {
     padding: 14px;
   }
 
+  /* Estiliza os links do menu. */
   .navegacao a {
     font-size: 14px;
   }
 
+  /* Estiliza a area de destaque. */
   .destaque {
     min-height: 360px;
     padding: 30px 20px;
   }
 
+  /* Organiza o temporizador. */
   .temporizador {
     gap: 10px;
   }
 
+  /* Estiliza cards do temporizador. */
   .tempocard span {
     width: 70px;
     height: 85px;
     font-size: 38px;
   }
 
+  /* Estiliza cards do temporizador. */
   .tempocard p {
     font-size: 14px;
   }
 
+  /* Estiliza titulos da pagina. */
   .tituloetiqueta {
     font-size: 24px;
   }
 
+  /* Estiliza textocard p. */
   .textocard p {
     font-size: 18px;
   }
 
+  /* Estiliza o banner da pagina. */
   .banner {
     height: 340px;
   }
 
+  /* Estiliza chamada. */
   .chamada {
     top: 20px;
     left: 20px;
   }
 
+  /* Estiliza chamada h2. */
   .chamada h2 {
     font-size: 36px;
   }
 
+  /* Estiliza os cards da secao. */
   .cartao {
     width: 100%;
     max-width: 320px;
   }
 
 }
+/* Estiliza o rodape da pagina. */
 footer {
   background-color: #2c3e50; /* cinza azulado escuro */
   color: #ecf0f1;
   padding: 40px 20px;
 }
 
+/* Organiza as colunas do rodape. */
 .rodape {
   display: flex;
   justify-content: space-between;
@@ -275,11 +320,13 @@ footer {
   gap: 30px;
 }
 
+/* Define colunas do rodape. */
 .coluna {
   flex: 1;
   min-width: 220px;
 }
 
+/* Estiliza titulos do rodape. */
 .coluna h3 {
   margin-bottom: 15px;
   font-size: 18px;
@@ -288,25 +335,30 @@ footer {
   padding-left: 10px;
 }
 
+/* Remove lista padrao do rodape. */
 .coluna ul {
   list-style: none;
 }
 
+/* Ajusta itens do rodape. */
 .coluna ul li {
   margin-bottom: 10px;
   font-size: 15px;
 }
 
+/* Estiliza links do rodape. */
 .coluna ul li a {
   color: #ecf0f1;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
+/* Define o hover dos links do rodape. */
 .coluna ul li a:hover {
   color: #3498db; /* azul claro */
 }
-/* Estado inicial (invisível) */
+/* Estado inicial (invisivel) */
+/* Estiliza os cards da secao. */
 .cartao {
   opacity: 0;
   transform: translateY(40px);
@@ -314,6 +366,7 @@ footer {
 }
 
 /* Quando aparece */
+/* Estiliza os cards da secao. */
 .cartao.ativo {
   opacity: 1;
   transform: translateY(0);

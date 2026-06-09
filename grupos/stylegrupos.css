@@ -1,4 +1,5 @@
-﻿* {
+/* Remove margens e padroes do navegador. */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,6 +8,7 @@
 /* =========================
    BASE DO SITE
 ========================= */
+/* Define a base visual da pagina. */
 body {
   background: #efefef;
   font-family: Arial, Helvetica, sans-serif;
@@ -17,6 +19,7 @@ body {
 /* =========================
    HEADER
 ========================= */
+/* Estiliza o cabecalho fixo. */
 .cabecalho {
   background: #ffffff;
   display: flex;
@@ -30,10 +33,12 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+/* Posiciona o bloco do logo. */
 .logotipo {
   z-index: 2;
 }
 
+/* Ajusta a imagem do logo. */
 .logotipo img {
   width: 55px;
   height: auto;
@@ -43,6 +48,7 @@ body {
 /* =========================
    MENU
 ========================= */
+/* Organiza o menu de navegacao. */
 .navegacao {
   background: #a9c6d9;
   padding: 16px 28px;
@@ -54,6 +60,7 @@ body {
   transform: translateX(-50%);
 }
 
+/* Estiliza os links do menu. */
 .navegacao a {
   text-decoration: none;
   color: #111;
@@ -62,6 +69,7 @@ body {
   transition: 0.3s ease;
 }
 
+/* Define o hover dos links do menu. */
 .navegacao a:hover {
   opacity: 0.7;
 }
@@ -69,6 +77,7 @@ body {
 /* =========================
    CONTADOR DO HEADER
 ========================= */
+/* Organiza o contador do topo. */
 .contador {
   margin-left: auto;
   display: flex;
@@ -76,6 +85,7 @@ body {
   gap: 10px;
 }
 
+/* Estiliza cada bloco do contador. */
 .tempoheader {
   width: 75px;
   height: 65px;
@@ -88,6 +98,7 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
+/* Estiliza os numeros do contador. */
 .tempoheader span {
   color: #ffffff;
   font-size: 28px;
@@ -95,6 +106,7 @@ body {
   line-height: 1;
 }
 
+/* Estiliza os rotulos do contador. */
 .tempoheader p {
   margin-top: 6px;
   color: #ffffff;
@@ -105,14 +117,16 @@ body {
 }
 
 /* =========================
-   CONTEÚDO PRINCIPAL
+   CONTEUDO PRINCIPAL
 ========================= */
+/* Estiliza elementos do grupo. */
 .conteudogrupos {
   min-height: 70vh;
   padding: 65px 48px 90px;
   background: radial-gradient(circle at center, #ffffff 0%, #ffffff 42%, #dce5eb 100%);
 }
 
+/* Estiliza elementos do grupo. */
 .secaogrupos {
   max-width: 1500px;
   margin: 0 auto;
@@ -120,8 +134,9 @@ body {
 }
 
 /* =========================
-   TÍTULO PRINCIPAL
+   TITULO PRINCIPAL
 ========================= */
+/* Estiliza titulos da pagina. */
 .titulocentral {
   width: fit-content;
   margin: 0 auto 60px;
@@ -141,6 +156,7 @@ body {
   position: relative;
 }
 
+/* Estiliza titulos da pagina. */
 .titulocentral::after {
   content: "";
   display: block;
@@ -152,6 +168,7 @@ body {
 /* =========================
    GRID DOS GRUPOS
 ========================= */
+/* Organiza a grade de grupos. */
 .gradegrupos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -161,6 +178,7 @@ body {
 /* =========================
    CARDS DOS GRUPOS
 ========================= */
+/* Estiliza cada card de grupo. */
 .cartaogrupo {
   min-height: 225px;
   background: linear-gradient(135deg, #ffffff 0%, #f3f7fa 48%, #dce5eb 100%);
@@ -177,6 +195,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
+/* Estiliza cada card de grupo. */
 .cartaogrupo::before {
   content: "";
   position: absolute;
@@ -186,6 +205,7 @@ body {
   transition: opacity 0.3s ease;
 }
 
+/* Estiliza cada card de grupo. */
 .cartaogrupo::after {
   content: "COPA 2026";
   position: absolute;
@@ -197,6 +217,7 @@ body {
   color: rgba(57, 62, 105, 0.22);
 }
 
+/* Estiliza cada card de grupo. */
 .cartaogrupo span {
   position: relative;
   z-index: 1;
@@ -210,16 +231,19 @@ body {
 /* =========================
    EFEITOS DOS CARDS
 ========================= */
+/* Estiliza cada card de grupo. */
 .cartaogrupo:hover {
   transform: translateY(-8px);
   box-shadow: 0 22px 38px rgba(0, 0, 0, 0.24);
   background: linear-gradient(135deg, #ffffff 0%, #edf5fa 45%, #cddce6 100%);
 }
 
+/* Estiliza cada card de grupo. */
 .cartaogrupo:hover::before {
   opacity: 1;
 }
 
+/* Estiliza cada card de grupo. */
 .cartaogrupo:hover span {
   color: #1d2344;
 }
@@ -227,28 +251,34 @@ body {
 /* =========================
    CARD ESPECIAL - GRUPO C
 ========================= */
+/* Estiliza elementos do grupo. */
 .grupoverde {
   background: linear-gradient(135deg, #ffffff 0%, #edf8f0 48%, #cfe8d7 100%);
   border-left-color: #247346;
 }
 
+/* Estiliza elementos do grupo. */
 .grupoverde::before {
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.78), rgba(59, 143, 88, 0.2));
 }
 
+/* Estiliza elementos do grupo. */
 .grupoverde::after {
   color: rgba(36, 115, 70, 0.26);
 }
 
+/* Estiliza elementos do grupo. */
 .grupoverde span {
   text-shadow: 2px 2px 0 rgba(127, 181, 143, 0.45);
 }
 
+/* Estiliza elementos do grupo. */
 .grupoverde:hover {
   background: linear-gradient(135deg, #ffffff 0%, #e2f4e8 45%, #b8dcc6 100%);
   box-shadow: 0 22px 38px rgba(26, 105, 58, 0.22);
 }
 
+/* Estiliza elementos do grupo. */
 .grupoverde:hover span {
   color: #185834;
 }
@@ -256,12 +286,14 @@ body {
 /* =========================
    FOOTER
 ========================= */
+/* Estiliza o rodape da pagina. */
 footer {
   background-color: #2c3e50;
   color: #ecf0f1;
   padding: 40px 20px;
 }
 
+/* Organiza as colunas do rodape. */
 .rodape {
   display: flex;
   justify-content: space-between;
@@ -271,11 +303,13 @@ footer {
   gap: 30px;
 }
 
+/* Define colunas do rodape. */
 .coluna {
   flex: 1;
   min-width: 220px;
 }
 
+/* Estiliza titulos do rodape. */
 .coluna h3 {
   margin-bottom: 15px;
   font-size: 18px;
@@ -284,26 +318,31 @@ footer {
   padding-left: 10px;
 }
 
+/* Remove lista padrao do rodape. */
 .coluna ul {
   list-style: none;
 }
 
+/* Ajusta itens do rodape. */
 .coluna ul li {
   margin-bottom: 10px;
   font-size: 15px;
 }
 
+/* Estiliza links do rodape. */
 .coluna ul li a {
   color: #ecf0f1;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
+/* Define o hover dos links do rodape. */
 .coluna ul li a:hover {
   color: #3498db;
   padding-left: 5px;
 }
 
+/* Estiliza o copyright. */
 .copyright {
   text-align: center;
   margin-top: 30px;
@@ -317,6 +356,7 @@ footer {
 /* =========================
    BANDEIRAS EM IMAGEM
 ========================= */
+/* Estiliza imagens de bandeiras. */
 .bandeira {
   width: 58px;
   height: 40px;
@@ -330,27 +370,34 @@ footer {
 /* =========================
    RESPONSIVO
 ========================= */
+/* Ajustes responsivos da pagina. */
 @media (max-width: 1100px) {
+  /* Organiza a grade de grupos. */
   .gradegrupos {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /* Estiliza cada card de grupo. */
   .cartaogrupo span {
     font-size: 36px;
   }
 }
 
+/* Ajustes responsivos da pagina. */
 @media (max-width: 900px) {
+  /* Define a base visual da pagina. */
   body {
     padding-top: 165px;
   }
 
+  /* Estiliza o cabecalho fixo. */
   .cabecalho {
     flex-direction: column;
     gap: 16px;
     padding: 20px;
   }
 
+  /* Organiza o menu de navegacao. */
   .navegacao {
     position: static;
     transform: none;
@@ -359,25 +406,31 @@ footer {
     justify-content: center;
   }
 
+  /* Organiza o contador do topo. */
   .contador {
     margin-left: 0;
   }
 
+  /* Organiza a grade de grupos. */
   .gradegrupos {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Estiliza titulos da pagina. */
   .titulocentral {
     font-size: 30px;
     padding: 16px 42px;
   }
 }
 
+/* Ajustes responsivos da pagina. */
 @media (max-width: 600px) {
+  /* Define a base visual da pagina. */
   body {
     padding-top: 210px;
   }
 
+  /* Organiza o menu de navegacao. */
   .navegacao {
     width: 100%;
     border-radius: 20px;
@@ -385,44 +438,53 @@ footer {
     padding: 14px;
   }
 
+  /* Estiliza os links do menu. */
   .navegacao a {
     font-size: 14px;
   }
 
+  /* Organiza o contador do topo. */
   .contador {
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  /* Estiliza elementos do grupo. */
   .conteudogrupos {
     padding: 45px 20px 70px;
   }
 
+  /* Estiliza titulos da pagina. */
   .titulocentral {
     font-size: 24px;
     padding: 14px 26px;
     margin-bottom: 45px;
   }
 
+  /* Organiza a grade de grupos. */
   .gradegrupos {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
+  /* Estiliza cada card de grupo. */
   .cartaogrupo {
     min-height: 155px;
     border-left-width: 14px;
   }
 
+  /* Estiliza cada card de grupo. */
   .cartaogrupo span {
     font-size: 30px;
   }
 
+  /* Organiza as colunas do rodape. */
   .rodape {
     flex-direction: column;
     text-align: center;
   }
 
+  /* Estiliza titulos do rodape. */
   .coluna h3 {
     border-left: none;
     border-bottom: 2px solid #3498db;

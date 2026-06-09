@@ -1,16 +1,19 @@
-﻿/* =========================
+/* =========================
    RESET E BASE
 ========================= */
+/* Remove margens e padroes do navegador. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Ajusta o comportamento geral da pagina. */
 html {
   scroll-behavior: smooth;
 }
 
+/* Define a base visual da pagina. */
 body {
   background: #eff3f6;
   color: #111;
@@ -21,6 +24,7 @@ body {
 /* =========================
    HEADER FIXO
 ========================= */
+/* Estiliza o cabecalho fixo. */
 .cabecalho {
   background: #ffffff;
   display: flex;
@@ -34,16 +38,19 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+/* Posiciona o bloco do logo. */
 .logotipo {
   z-index: 2;
 }
 
+/* Ajusta a imagem do logo. */
 .logotipo img {
   width: 55px;
   height: auto;
   display: block;
 }
 
+/* Organiza o menu de navegacao. */
 .navegacao {
   background: #a9c6d9;
   padding: 16px 28px;
@@ -55,6 +62,7 @@ body {
   transform: translateX(-50%);
 }
 
+/* Estiliza os links do menu. */
 .navegacao a {
   color: #111;
   text-decoration: none;
@@ -63,10 +71,12 @@ body {
   transition: 0.3s ease;
 }
 
+/* Define o hover dos links do menu. */
 .navegacao a:hover {
   opacity: 0.7;
 }
 
+/* Organiza o contador do topo. */
 .contador {
   margin-left: auto;
   display: flex;
@@ -74,6 +84,7 @@ body {
   gap: 10px;
 }
 
+/* Estiliza cada bloco do contador. */
 .tempoheader {
   width: 75px;
   height: 65px;
@@ -86,6 +97,7 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
+/* Estiliza os numeros do contador. */
 .tempoheader span {
   color: #ffffff;
   font-size: 28px;
@@ -93,6 +105,7 @@ body {
   line-height: 1;
 }
 
+/* Estiliza os rotulos do contador. */
 .tempoheader p {
   margin-top: 6px;
   color: #ffffff;
@@ -105,6 +118,7 @@ body {
 /* =========================
    CONTEUDO PRINCIPAL
 ========================= */
+/* Estiliza elementos do grupo. */
 .conteudogrupo {
   min-height: 78vh;
   padding: 58px 40px 90px;
@@ -113,12 +127,14 @@ body {
     linear-gradient(135deg, #f7f9fb 0%, #edf3f7 48%, #d8e3eb 100%);
 }
 
+/* Limita e centraliza o conteudo. */
 .container {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
 
+/* Estiliza titulos da pagina. */
 .titulopagina {
   width: fit-content;
   margin: 0 auto 42px;
@@ -131,6 +147,7 @@ body {
   position: relative;
 }
 
+/* Estiliza titulos da pagina. */
 .titulopagina::after {
   content: "";
   display: block;
@@ -140,6 +157,7 @@ body {
   background: #8a8a8a;
 }
 
+/* Estiliza elementos do grupo. */
 .layoutgrupo {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
@@ -150,6 +168,7 @@ body {
 /* =========================
    PARTE 1 - INTEGRANTES
 ========================= */
+/* Estiliza os cards da secao. */
 .cartaointegrantes {
   background: #fbfbf4;
   border-radius: 26px;
@@ -160,6 +179,7 @@ body {
   box-shadow: 0 18px 34px rgba(0, 0, 0, 0.16);
 }
 
+/* Estiliza os cards da secao. */
 .cartaointegrantes::before,
 .cartaointegrantes::after {
   content: "";
@@ -172,14 +192,17 @@ body {
   pointer-events: none;
 }
 
+/* Estiliza os cards da secao. */
 .cartaointegrantes::before {
   top: -14px;
 }
 
+/* Estiliza os cards da secao. */
 .cartaointegrantes::after {
   bottom: -14px;
 }
 
+/* Estiliza titulos da pagina. */
 .titulogrupo {
   color: #393e69;
   font-family: Georgia, "Times New Roman", serif;
@@ -189,6 +212,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Estiliza elementos do grupo. */
 .linhagrupo {
   width: 86%;
   height: 3px;
@@ -197,11 +221,13 @@ body {
   border-radius: 20px;
 }
 
+/* Estiliza dados dos times. */
 .listatimes {
   display: grid;
   gap: 14px;
 }
 
+/* Estiliza dados dos times. */
 .itemtime {
   min-height: 68px;
   background: rgba(255, 255, 255, 0.78);
@@ -215,11 +241,13 @@ body {
   transition: 0.3s ease;
 }
 
+/* Estiliza dados dos times. */
 .itemtime:hover {
   transform: translateX(6px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.13);
 }
 
+/* Estiliza dados dos times. */
 .nometime {
   color: #8b1741;
   font-family: Georgia, "Times New Roman", serif;
@@ -228,6 +256,7 @@ body {
   line-height: 1.1;
 }
 
+/* Estiliza o resumo da secao. */
 .resumogrupo {
   background: linear-gradient(135deg, #ffffff 0%, #f2f7fa 52%, #dce7ef 100%);
   border-radius: 24px;
@@ -239,6 +268,7 @@ body {
   justify-content: center;
 }
 
+/* Estiliza o resumo da secao. */
 .etiquetaresumo {
   width: fit-content;
   background: #111820;
@@ -251,6 +281,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Estiliza o resumo da secao. */
 .resumogrupo h2 {
   margin-top: 22px;
   color: #111;
@@ -261,6 +292,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Estiliza o resumo da secao. */
 .resumogrupo p {
   max-width: 680px;
   margin-top: 18px;
@@ -269,6 +301,7 @@ body {
   line-height: 1.6;
 }
 
+/* Estiliza o resumo da secao. */
 .metricasresumo {
   display: flex;
   flex-wrap: wrap;
@@ -276,6 +309,7 @@ body {
   margin-top: 28px;
 }
 
+/* Estiliza dado. */
 .dado {
   min-width: 150px;
   background: #ffffff;
@@ -284,6 +318,7 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.09);
 }
 
+/* Estiliza dado strong. */
 .dado strong {
   display: block;
   color: #393e69;
@@ -292,6 +327,7 @@ body {
   line-height: 1;
 }
 
+/* Estiliza dado span. */
 .dado span {
   display: block;
   margin-top: 7px;
@@ -305,10 +341,12 @@ body {
 /* =========================
    PARTE 2 - JOGOS
 ========================= */
+/* Estiliza informacoes dos jogos. */
 .secaojogos {
   margin-top: 34px;
 }
 
+/* Estiliza o cabecalho fixo. */
 .cabecalhosecao {
   display: flex;
   align-items: end;
@@ -317,6 +355,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Estiliza o cabecalho fixo. */
 .cabecalhosecao h2 {
   color: #111;
   font-family: Georgia, "Times New Roman", serif;
@@ -325,6 +364,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Estiliza o cabecalho fixo. */
 .cabecalhosecao p {
   color: #5b6570;
   font-size: 14px;
@@ -333,12 +373,14 @@ body {
   text-transform: uppercase;
 }
 
+/* Organiza os itens em grade. */
 .gradejogos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
+/* Estiliza os cards da secao. */
 .cartaopartida {
   background: #ffffff;
   border-radius: 20px;
@@ -348,11 +390,13 @@ body {
   transition: 0.3s ease;
 }
 
+/* Estiliza os cards da secao. */
 .cartaopartida:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 34px rgba(0, 0, 0, 0.18);
 }
 
+/* Estiliza dados da partida. */
 .topopartida {
   background: #111820;
   color: #ffffff;
@@ -362,12 +406,14 @@ body {
   padding: 14px 18px;
 }
 
+/* Estiliza data. */
 .data {
   font-size: 13px;
   font-weight: 900;
   letter-spacing: 1px;
 }
 
+/* Estiliza horario. */
 .horario {
   background: #a9c6d9;
   color: #111;
@@ -377,6 +423,7 @@ body {
   font-weight: 900;
 }
 
+/* Estiliza confronto. */
 .confronto {
   min-height: 132px;
   padding: 20px 18px;
@@ -386,6 +433,7 @@ body {
   gap: 10px;
 }
 
+/* Estiliza equipe. */
 .equipe {
   color: #111;
   font-family: Georgia, "Times New Roman", serif;
@@ -394,6 +442,7 @@ body {
   line-height: 1.15;
 }
 
+/* Estiliza versus. */
 .versus {
   width: fit-content;
   background: #eef3f6;
@@ -405,6 +454,7 @@ body {
   letter-spacing: 2px;
 }
 
+/* Estiliza fonte. */
 .fonte {
   margin-top: 22px;
   color: #65717d;
@@ -415,12 +465,14 @@ body {
 /* =========================
    ANIMACOES SIMPLES
 ========================= */
+/* Prepara a animacao de entrada. */
 .revelar {
   opacity: 0;
   transform: translateY(28px);
   transition: 0.65s ease;
 }
 
+/* Mostra o item animado. */
 .revelar.ativo {
   opacity: 1;
   transform: translateY(0);
@@ -429,12 +481,14 @@ body {
 /* =========================
    FOOTER
 ========================= */
+/* Estiliza o rodape da pagina. */
 footer {
   background-color: #2c3e50;
   color: #ecf0f1;
   padding: 40px 20px;
 }
 
+/* Organiza as colunas do rodape. */
 .rodape {
   display: flex;
   justify-content: space-between;
@@ -444,11 +498,13 @@ footer {
   gap: 30px;
 }
 
+/* Define colunas do rodape. */
 .coluna {
   flex: 1;
   min-width: 220px;
 }
 
+/* Estiliza titulos do rodape. */
 .coluna h3 {
   margin-bottom: 15px;
   color: #bdc3c7;
@@ -457,26 +513,31 @@ footer {
   padding-left: 10px;
 }
 
+/* Remove lista padrao do rodape. */
 .coluna ul {
   list-style: none;
 }
 
+/* Ajusta itens do rodape. */
 .coluna ul li {
   margin-bottom: 10px;
   font-size: 15px;
 }
 
+/* Estiliza links do rodape. */
 .coluna ul li a {
   color: #ecf0f1;
   text-decoration: none;
   transition: 0.3s ease;
 }
 
+/* Define o hover dos links do rodape. */
 .coluna ul li a:hover {
   color: #3498db;
   padding-left: 5px;
 }
 
+/* Estiliza o copyright. */
 .copyright {
   margin-top: 30px;
   padding-top: 15px;
@@ -492,6 +553,7 @@ footer {
 /* =========================
    BANDEIRAS EM IMAGEM
 ========================= */
+/* Estiliza imagens de bandeiras. */
 .bandeira {
   width: 58px;
   height: 40px;
@@ -505,27 +567,34 @@ footer {
 /* =========================
    RESPONSIVO
 ========================= */
+/* Ajustes responsivos da pagina. */
 @media (max-width: 1100px) {
+  /* Estiliza elementos do grupo. */
   .layoutgrupo {
     grid-template-columns: 1fr;
   }
 
+  /* Organiza os itens em grade. */
   .gradejogos {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Ajustes responsivos da pagina. */
 @media (max-width: 900px) {
+  /* Define a base visual da pagina. */
   body {
     padding-top: 185px;
   }
 
+  /* Estiliza o cabecalho fixo. */
   .cabecalho {
     flex-direction: column;
     gap: 14px;
     padding: 18px 20px;
   }
 
+  /* Organiza o menu de navegacao. */
   .navegacao {
     position: static;
     transform: none;
@@ -534,24 +603,30 @@ footer {
     gap: 20px;
   }
 
+  /* Organiza o contador do topo. */
   .contador {
     margin-left: 0;
   }
 
+  /* Estiliza titulos da pagina. */
   .titulopagina {
     font-size: 30px;
   }
 
+  /* Estiliza o resumo da secao. */
   .resumogrupo h2 {
     font-size: 40px;
   }
 }
 
+/* Ajustes responsivos da pagina. */
 @media (max-width: 650px) {
+  /* Define a base visual da pagina. */
   body {
     padding-top: 230px;
   }
 
+  /* Organiza o menu de navegacao. */
   .navegacao {
     width: 100%;
     border-radius: 20px;
@@ -559,58 +634,71 @@ footer {
     padding: 14px;
   }
 
+  /* Estiliza os links do menu. */
   .navegacao a {
     font-size: 14px;
   }
 
+  /* Organiza o contador do topo. */
   .contador {
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  /* Estiliza elementos do grupo. */
   .conteudogrupo {
     padding: 44px 18px 70px;
   }
 
+  /* Estiliza titulos da pagina. */
   .titulopagina {
     font-size: 25px;
   }
 
+  /* Estiliza os cards da secao. */
   .cartaointegrantes,
   .resumogrupo {
     padding: 22px;
     border-radius: 20px;
   }
 
+  /* Estiliza titulos da pagina. */
   .titulogrupo {
     font-size: 28px;
   }
 
+  /* Estiliza dados dos times. */
   .nometime {
     font-size: 23px;
   }
 
+  /* Estiliza o resumo da secao. */
   .resumogrupo h2 {
     font-size: 32px;
   }
 
+  /* Estiliza o cabecalho fixo. */
   .cabecalhosecao {
     display: block;
   }
 
+  /* Estiliza o cabecalho fixo. */
   .cabecalhosecao p {
     margin-top: 8px;
   }
 
+  /* Organiza os itens em grade. */
   .gradejogos {
     grid-template-columns: 1fr;
   }
 
+  /* Organiza as colunas do rodape. */
   .rodape {
     flex-direction: column;
     text-align: center;
   }
 
+  /* Estiliza titulos do rodape. */
   .coluna h3 {
     border-left: none;
     border-bottom: 2px solid #3498db;

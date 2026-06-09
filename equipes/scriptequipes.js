@@ -5,20 +5,20 @@ const minutosEl = document.getElementById("minutos");
 const segundosEl = document.getElementById("segundos");
 const mensagemEl = document.getElementById("mensagem");
 
-// DATA DE INÍCIO DA COPA DO MUNDO 2026
+// DATA DE INICIO DA COPA DO MUNDO 2026
 const dataCopa = new Date("2026-06-11T21:00:00-03:00");
 
-// FUNÇÃO PARA DEIXAR O NÚMERO COM 2 DÍGITOS
+// FUNCAO PARA DEIXAR O NUMERO COM 2 DIGITOS
 function formatarNumero(numero) {
   return String(numero).padStart(2, "0");
 }
 
-// FUNÇÃO QUE ATUALIZA A CONTAGEM REGRESSIVA
+// FUNCAO QUE ATUALIZA A CONTAGEM REGRESSIVA
 function atualizarContador() {
   const agora = new Date();
   const diferenca = dataCopa - agora;
 
-  // SE A COPA JÁ TIVER COMEÇADO
+  // SE A COPA JA TIVER COMECADO
   if (diferenca <= 0) {
     diasEl.textContent = "00";
     horasEl.textContent = "00";
@@ -44,7 +44,7 @@ function atualizarContador() {
   segundosEl.textContent = formatarNumero(segundos);
 }
 
-// ATUALIZA ASSIM QUE A PÁGINA CARREGA
+// ATUALIZA ASSIM QUE A PAGINA CARREGA
 atualizarContador();
 
 // ATUALIZA A CADA 1 SEGUNDO
