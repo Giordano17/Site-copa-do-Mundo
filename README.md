@@ -182,18 +182,6 @@ Os arquivos CSS do projeto estão organizados por página. Cada aba possui seu p
 
 Todos os CSS possuem comentários curtos explicando a função dos blocos, como cabeçalho, navegação, contador, cards, tabelas, rodapé e responsividade.
 
-## Como Executar o Projeto
-
-Como o projeto é feito com HTML, CSS e JavaScript puro, não é necessário instalar dependências.
-
-Para visualizar o site, abra o arquivo principal no navegador:
-
-```text
-abertura/indexabertura.html
-```
-
-Também é possível executar o projeto usando um servidor local, como a extensão Live Server do Visual Studio Code.
-
 ## Status do Projeto
 
 O site possui as páginas principais estruturadas, navegação entre seções, página de equipes, página de estádios, página de preços, página de grupos e páginas individuais dos grupos da Copa do Mundo 2026.

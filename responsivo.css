@@ -1,0 +1,534 @@
+/* RESPONSIVIDADE GERAL */
+/* Evita que elementos largos criem rolagem lateral na pagina. */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Mantem imagens dentro da largura disponivel. */
+img {
+  max-width: 100%;
+}
+
+/* HEADER COM CONTADOR */
+/* Reorganiza o cabecalho em telas menores de computador. */
+@media (max-width: 1180px) {
+  body:has(.contador) {
+    padding-top: 190px;
+  }
+
+  /* Permite que menu e contador quebrem em linhas sem sobreposicao. */
+  .cabecalho:has(.contador) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 20px;
+    padding: 16px 24px;
+  }
+
+  /* Mantem o logo alinhado na primeira linha. */
+  .cabecalho:has(.contador) .logotipo {
+    margin-right: auto;
+  }
+
+  /* Remove o posicionamento absoluto do menu no cabecalho menor. */
+  .cabecalho:has(.contador) .navegacao {
+    position: static;
+    transform: none;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 28px;
+    padding: 14px 22px;
+  }
+
+  /* Ajusta o contador para acompanhar a quebra do cabecalho. */
+  .cabecalho:has(.contador) .contador {
+    margin-left: 0;
+  }
+}
+
+/* HEADER DA PAGINA INICIAL */
+/* Ajusta o cabecalho sem contador da pagina inicial. */
+@media (max-width: 900px) {
+  body:not(:has(.contador)) {
+    padding-top: 155px;
+  }
+
+  /* Empilha logo e menu sem sobrepor o conteudo. */
+  .cabecalho:not(:has(.contador)) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    padding: 16px 22px;
+  }
+
+  /* Deixa o menu da pagina inicial ocupar o fluxo normal. */
+  .cabecalho:not(:has(.contador)) .navegacao {
+    position: static;
+    transform: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}
+
+/* MENU MOBILE */
+/* Transforma o menu em grade compacta no celular. */
+@media (max-width: 700px) {
+  body:has(.contador) {
+    padding-top: 238px;
+  }
+
+  body:not(:has(.contador)) {
+    padding-top: 170px;
+  }
+
+  /* Compacta o cabecalho para telas estreitas. */
+  .cabecalho {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  /* Reduz o logo no mobile. */
+  .logotipo img {
+    width: 46px;
+  }
+
+  /* Organiza os links em duas colunas tocaveis. */
+  .navegacao,
+  .cabecalho:has(.contador) .navegacao,
+  .cabecalho:not(:has(.contador)) .navegacao {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 10px;
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  /* Centraliza os textos do menu mobile. */
+  .navegacao a {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  /* Faz o contador caber em uma linha no celular. */
+  .contador {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  /* Reduz os blocos do contador no mobile. */
+  .tempoheader {
+    width: 100%;
+    min-width: 0;
+    height: 54px;
+    border-radius: 12px;
+  }
+
+  /* Reduz os numeros do contador no mobile. */
+  .tempoheader span {
+    font-size: 23px;
+  }
+
+  /* Reduz os rotulos do contador no mobile. */
+  .tempoheader p {
+    margin-top: 4px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}
+
+/* CELULARES MUITO ESTREITOS */
+/* Ajusta o contador em aparelhos com pouca largura. */
+@media (max-width: 380px) {
+  body:has(.contador) {
+    padding-top: 246px;
+  }
+
+  /* Deixa os numeros mais compactos. */
+  .tempoheader span {
+    font-size: 21px;
+  }
+
+  /* Evita que os rotulos estourem os cards. */
+  .tempoheader p {
+    font-size: 7px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* PAGINA INICIAL */
+/* Ajusta a contagem principal em telas medias. */
+@media (max-width: 900px) {
+  .destaque {
+    min-height: auto;
+    padding: 50px 18px;
+  }
+
+  /* Reduz o bloco da contagem sem mudar o estilo. */
+  .contagem {
+    border-radius: 24px;
+    padding: 40px 24px;
+  }
+
+  /* Reduz a etiqueta da contagem. */
+  .etiqueta {
+    font-size: 22px;
+    letter-spacing: 6px;
+  }
+
+  /* Reduz o titulo da contagem. */
+  .contagem h1 {
+    font-size: 44px;
+  }
+
+  /* Ajusta a secao sobre para uma coluna confortavel. */
+  .sobre {
+    padding: 44px 24px 0;
+  }
+}
+
+/* Ajusta a pagina inicial no mobile. */
+@media (max-width: 600px) {
+  .destaque {
+    padding: 32px 14px 42px;
+  }
+
+  /* Reduz o bloco da contagem no mobile. */
+  .contagem {
+    padding: 30px 16px;
+  }
+
+  /* Mantem o texto da etiqueta dentro da tela. */
+  .etiqueta {
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+  }
+
+  /* Ajusta o titulo principal da contagem. */
+  .contagem h1 {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  /* Organiza os cards da contagem em duas colunas. */
+  .temporizador {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  /* Reduz os cards grandes do temporizador. */
+  .tempocard {
+    width: 100%;
+    height: 112px;
+    padding: 18px 10px;
+  }
+
+  /* Ajusta os numeros grandes da contagem. */
+  .tempocard span {
+    width: auto;
+    height: auto;
+    font-size: 38px;
+  }
+
+  /* Ajusta a legenda da contagem. */
+  .legenda {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  /* Reduz os espacamentos da secao sobre. */
+  .sobre {
+    padding: 34px 16px 0;
+  }
+
+  /* Evita textos muito grandes no card sobre. */
+  .textocard {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  /* Melhora a leitura do texto sobre no mobile. */
+  .textocard p {
+    font-size: 17px;
+  }
+
+  /* Ajusta a imagem da secao sobre. */
+  .imagemsobre img {
+    max-height: 320px;
+  }
+
+  /* Reduz o banner no mobile. */
+  .banner {
+    height: 300px;
+  }
+
+  /* Reduz o titulo sobreposto no banner. */
+  .chamada h2 {
+    font-size: 32px;
+  }
+
+  /* Reduz a area dos cards relacionados. */
+  .relacionados {
+    padding: 38px 16px 58px;
+  }
+
+  /* Faz o titulo central caber na largura do celular. */
+  .titulocentral {
+    width: 100%;
+    max-width: 360px;
+    padding: 14px 18px;
+    font-size: 23px;
+  }
+}
+
+/* PAGINA DE EQUIPES */
+/* Ajusta os cards de equipes para telas menores de computador. */
+@media (max-width: 1180px) {
+  .gradecards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  /* Faz os cards acompanharem a largura da grade. */
+  .cartao {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Ajusta a pagina de equipes no mobile. */
+@media (max-width: 600px) {
+  .cartao {
+    max-width: none;
+  }
+
+  /* Reduz a altura das imagens dos cards. */
+  .cartao img {
+    height: 185px;
+  }
+
+  /* Reduz os titulos dos cards. */
+  .cartao h3 {
+    font-size: 19px;
+  }
+}
+
+/* PAGINAS DE ESTADIOS E PRECOS */
+/* Ajusta conteudos informativos em telas menores. */
+@media (max-width: 1180px) {
+  .conteudoestadios,
+  .conteudoprecos,
+  .conteudogrupos,
+  .conteudogrupo {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* Reduz os titulos principais das paginas internas. */
+  .cabecalhopagina h1,
+  .titulopagina {
+    font-size: 32px;
+  }
+
+  /* Ajusta cards de estadios em telas intermediarias. */
+  .gradeestadios {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+/* Ajusta resumos e cabecalhos internos em tablets. */
+@media (max-width: 760px) {
+  .resumoestadios,
+  .resumoprecos {
+    grid-template-columns: 1fr;
+  }
+
+  /* Permite que o cabecalho do pais quebre sem estourar. */
+  .cabecalhopais {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* Permite quebra de texto no resumo do pais. */
+  .cabecalhopais p {
+    white-space: normal;
+  }
+
+  /* Deixa o card de precos empilhado. */
+  .cartaoprecos {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Ajusta estadios e precos no mobile. */
+@media (max-width: 600px) {
+  .conteudoestadios,
+  .conteudoprecos,
+  .conteudogrupos,
+  .conteudogrupo {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Reduz subtitulos e textos de abertura. */
+  .cabecalhopagina p {
+    font-size: 16px;
+  }
+
+  /* Reduz os titulos por pais. */
+  .cabecalhopais h2 {
+    font-size: 27px;
+  }
+
+  /* Reduz a imagem dos estadios. */
+  .imagemestadio {
+    height: 165px;
+  }
+
+  /* Reduz os titulos dos estadios. */
+  .conteudoestadio h3 {
+    font-size: 23px;
+  }
+
+  /* Garante rolagem horizontal clara na tabela. */
+  .envoltoriotabela {
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+  /* Reduz celulas da tabela no mobile. */
+  .tabelaprecos th,
+  .tabelaprecos td {
+    padding: 13px 12px;
+  }
+}
+
+/* PAGINA DE GRUPOS */
+/* Ajusta a grade dos grupos em telas pequenas de computador. */
+@media (max-width: 1180px) {
+  .gradegrupos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Ajusta os cards dos grupos em tablets. */
+@media (max-width: 900px) {
+  .gradegrupos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Reduz a altura dos cards de grupo. */
+  .cartaogrupo {
+    min-height: 180px;
+  }
+}
+
+/* Ajusta os cards dos grupos no mobile. */
+@media (max-width: 560px) {
+  .gradegrupos {
+    grid-template-columns: 1fr;
+  }
+
+  /* Compacta os cards de grupo. */
+  .cartaogrupo {
+    min-height: 145px;
+  }
+
+  /* Reduz o nome do grupo. */
+  .cartaogrupo span {
+    font-size: 28px;
+  }
+}
+
+/* PAGINAS INDIVIDUAIS DOS GRUPOS */
+/* Ajusta o layout dos grupos em telas menores. */
+@media (max-width: 1180px) {
+  .layoutgrupo {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ajusta os jogos em telas intermediarias. */
+  .gradejogos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Ajusta textos grandes dos grupos no mobile. */
+@media (max-width: 650px) {
+  .titulopagina {
+    font-size: 25px;
+  }
+
+  /* Garante quebra correta dos nomes das selecoes. */
+  .itemtime,
+  .equipe,
+  .nometime {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  /* Reduz o titulo do resumo do grupo. */
+  .resumogrupo h2 {
+    font-size: 32px;
+  }
+
+  /* Empilha os jogos em uma coluna. */
+  .gradejogos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ajusta cards de jogos em celulares estreitos. */
+@media (max-width: 420px) {
+  .topopartida {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Reduz nomes de equipes nos cards de jogos. */
+  .equipe {
+    font-size: 20px;
+  }
+
+  /* Reduz blocos metricos do resumo. */
+  .dado {
+    width: 100%;
+  }
+}
+
+/* RODAPE */
+/* Melhora o rodape em telas pequenas. */
+@media (max-width: 760px) {
+  footer {
+    padding: 34px 18px;
+  }
+
+  /* Centraliza as colunas do rodape. */
+  .rodape {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  /* Centraliza os titulos do rodape. */
+  .coluna h3 {
+    border-left: none;
+    border-bottom: 2px solid #3498db;
+    padding-left: 0;
+    padding-bottom: 5px;
+  }
+}
