@@ -204,7 +204,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Estiliza a tabela da pagina. */
+/* Cria a caixa externa da tabela e permite rolagem horizontal em telas pequenas. */
 .envoltoriotabela {
   overflow-x: auto;
   background: #ffffff;
@@ -213,14 +213,14 @@ body {
   border-left: 14px solid #393e69;
 }
 
-/* Estiliza a tabela de precos. */
+/* Faz a tabela ocupar toda a caixa e evita que as colunas fiquem espremidas. */
 .tabelaprecos {
   width: 100%;
   min-width: 980px;
   border-collapse: collapse;
 }
 
-/* Estiliza a tabela de precos. */
+/* Define espacamento, divisoria e alinhamento das celulas. */
 .tabelaprecos th,
 .tabelaprecos td {
   padding: 17px 18px;
@@ -229,7 +229,7 @@ body {
   vertical-align: top;
 }
 
-/* Estiliza a tabela de precos. */
+/* Deixa o cabecalho da tabela escuro, branco e em letras maiusculas. */
 .tabelaprecos th {
   background: #111820;
   color: #ffffff;
@@ -239,24 +239,24 @@ body {
   text-transform: uppercase;
 }
 
-/* Estiliza a tabela de precos. */
+/* Define a aparencia padrao dos dados da tabela. */
 .tabelaprecos td {
   color: #222;
   font-size: 14px;
   line-height: 1.35;
 }
 
-/* Estiliza a tabela de precos. */
+/* Aplica cor alternada nas linhas pares para facilitar a leitura. */
 .tabelaprecos tbody tr:nth-child(even) {
   background: #f3f7fa;
 }
 
-/* Estiliza a tabela de precos. */
+/* Destaca a linha quando o mouse passa por cima. */
 .tabelaprecos tbody tr:hover {
   background: #e7f0f6;
 }
 
-/* Estiliza a tabela de precos. */
+/* Destaca a coluna de preco e impede quebra de linha. */
 .tabelaprecos td:nth-child(5) {
   color: #111820;
   font-weight: 900;

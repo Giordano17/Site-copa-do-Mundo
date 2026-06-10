@@ -148,10 +148,18 @@ body {
   overflow: hidden;
   width: 450px;
   height: 300PX;
-  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   background: radial-gradient(circle at center, #ffffff 0%, #ffffff 45%, #6c8697 250%);
   
+}
+
+/* Revela os cards ao rolar a pagina. */
+.cartao.ativo {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Estiliza os cards da secao. */
@@ -177,19 +185,6 @@ body {
 
 /* RESPONSIVO */
 /* Ajustes responsivos da pagina. */
-@media (max-width: 1100px) {
-  /* Estiliza chamada h2. */
-  .chamada h2 {
-    font-size: 64px;
-  }
-
-  /* Estiliza textocard p. */
-  .textocard p {
-    font-size: 22px;
-  }
-}
-
-/* Ajustes responsivos da pagina. */
 @media (max-width: 900px) {
   /* Estiliza o cabecalho fixo. */
   .cabecalho {
@@ -203,26 +198,6 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  /* Estiliza a secao sobre. */
-  .layoutsobre {
-    grid-template-columns: 1fr;
-  }
-
-  /* Estiliza a secao sobre. */
-  .imagemsobre img {
-    max-height: 420px;
-  }
-
-  /* Estiliza o banner da pagina. */
-  .banner {
-    height: 420px;
-  }
-
-  /* Estiliza chamada h2. */
-  .chamada h2 {
-    font-size: 48px;
   }
 
   /* Estiliza titulos da pagina. */
@@ -245,55 +220,6 @@ body {
   /* Estiliza os links do menu. */
   .navegacao a {
     font-size: 14px;
-  }
-
-  /* Estiliza a area de destaque. */
-  .destaque {
-    min-height: 360px;
-    padding: 30px 20px;
-  }
-
-  /* Organiza o temporizador. */
-  .temporizador {
-    gap: 10px;
-  }
-
-  /* Estiliza cards do temporizador. */
-  .tempocard span {
-    width: 70px;
-    height: 85px;
-    font-size: 38px;
-  }
-
-  /* Estiliza cards do temporizador. */
-  .tempocard p {
-    font-size: 14px;
-  }
-
-  /* Estiliza titulos da pagina. */
-  .tituloetiqueta {
-    font-size: 24px;
-  }
-
-  /* Estiliza textocard p. */
-  .textocard p {
-    font-size: 18px;
-  }
-
-  /* Estiliza o banner da pagina. */
-  .banner {
-    height: 340px;
-  }
-
-  /* Estiliza chamada. */
-  .chamada {
-    top: 20px;
-    left: 20px;
-  }
-
-  /* Estiliza chamada h2. */
-  .chamada h2 {
-    font-size: 36px;
   }
 
   /* Estiliza os cards da secao. */
@@ -356,18 +282,4 @@ footer {
 /* Define o hover dos links do rodape. */
 .coluna ul li a:hover {
   color: #3498db; /* azul claro */
-}
-/* Estado inicial (invisivel) */
-/* Estiliza os cards da secao. */
-.cartao {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease;
-}
-
-/* Quando aparece */
-/* Estiliza os cards da secao. */
-.cartao.ativo {
-  opacity: 1;
-  transform: translateY(0);
 }

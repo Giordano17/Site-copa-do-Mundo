@@ -327,7 +327,15 @@ body {
   border-radius: 20px;
   overflow: hidden;
   width: 250px;
-  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Revela os cards ao rolar a pagina. */
+.cartao.ativo {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Estiliza os cards da secao. */

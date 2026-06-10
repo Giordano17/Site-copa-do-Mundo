@@ -4,6 +4,7 @@ const horasEl = document.getElementById("horas");
 const minutosEl = document.getElementById("minutos");
 const segundosEl = document.getElementById("segundos");
 const mensagemEl = document.getElementById("mensagem");
+const cards = document.querySelectorAll(".cartao, .revelar, .cartaogrupo");
 
 // DATA DE INICIO DA COPA DO MUNDO 2026
 const dataCopa = new Date("2026-06-11T16:00:00-03:00");
@@ -24,9 +25,11 @@ function atualizarContador() {
     horasEl.textContent = "00";
     minutosEl.textContent = "00";
     segundosEl.textContent = "00";
+
     if (mensagemEl) {
-      mensagemEl.textContent = "A Copa do Mundo 2026 começou!";
+      mensagemEl.textContent = "A Copa do Mundo 2026 comecou!";
     }
+
     return;
   }
 
@@ -46,8 +49,30 @@ function atualizarContador() {
   segundosEl.textContent = formatarNumero(segundos);
 }
 
+// FUNCAO QUE REVELA OS CARDS AO ROLAR A PAGINA
+function revelarCards() {
+  const alturaTela = window.innerHeight;
+
+  cards.forEach(cartao => {
+    const posicao = cartao.getBoundingClientRect().top;
+
+    if (posicao < alturaTela - 100) {
+      cartao.classList.add("ativo"); // aparece
+    } else {
+      cartao.classList.remove("ativo"); // some ao subir
+    }
+  });
+}
+
 // ATUALIZA ASSIM QUE A PAGINA CARREGA
 atualizarContador();
 
 // ATUALIZA A CADA 1 SEGUNDO
 setInterval(atualizarContador, 1000);
+
+// EXECUTA AO ABRIR
+revelarCards();
+
+// EXECUTA AO ROLAR
+window.addEventListener("scroll", revelarCards);
+
