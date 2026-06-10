@@ -24,7 +24,9 @@ function atualizarContador() {
     horasEl.textContent = "00";
     minutosEl.textContent = "00";
     segundosEl.textContent = "00";
-    mensagemEl.textContent = "A Copa do Mundo 2026 começou!";
+    if (mensagemEl) {
+      mensagemEl.textContent = "A Copa do Mundo 2026 começou!";
+    }
     return;
   }
 
@@ -49,7 +51,6 @@ atualizarContador();
 
 // ATUALIZA A CADA 1 SEGUNDO
 setInterval(atualizarContador, 1000);
-``
 
 const cards = document.querySelectorAll(".cartao");
 
@@ -72,4 +73,3 @@ revelarCards();
 
 // executa ao rolar
 window.addEventListener("scroll", revelarCards);
-``
